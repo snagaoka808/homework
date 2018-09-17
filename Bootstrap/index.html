@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Latitude Visualizations</title>
+
+        <link rel="stylesheet" href="Weather.css">
+        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    </head>
+
+    <body style="background-color:#DCDCDC;">  
+       <div>
+        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+                       
+            <a class="navbar-brand" href="snagaoka808.github.io"><h3 id="lat">Latitude</h3></a>
+                      
+         <ul class="navbar-nav">
+                    
+                <li class="nav-item dropdown" >
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Plots</a>
+                    <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Temperature.html" target="_blank">Temperature</a></li>
+                            <li><a class="dropdown-item" href="Wind.html" target="_blank">Wind Speed</a></li>
+                            <li><a class="dropdown-item" href="Cloudiness.html" target="_blank">Cloudiness</a></li>
+                            <li><a class="dropdown-item" href="Humidity.html"target="_blank">Humidity</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Data.html">Data</a>
+                </li>
+            </ul>
+         </nav>
+        </div>
+        <br>
+        <div class="container">
+            <div class="jumbotron col-md-8 float-left bg-light">
+                <h2>Latitude Vs. X</h2>
+                <hr>
+                <img id="homeimg" src="Resources/images/Fig1.png" class="rounded float-left" alt="TempvsLatitude" style="width:50%;">
+                <p>
+                    The purpose fo this assignment was to use Python together with the Open Weather Map API to visualize the relationship between latitude and weather characteristics
+                    such as humidity, temperature, wind speed and cloudiness. To do this, we randomly selected over 500 unique cities based on their latitude and longitude, performed an API call
+                    on each citie's weather characteristics and then plotted the cloudiness percentage, humidity percentage, wind speed (in mph) and the temperature (F) versus the 
+                    latitude of each city. In the end, using Matplotlib, we constructed 4 different scatter plots of each different weather characteristc along with the latitude for all 500 cities.
+                </p>
+
+            </div>
+            
+            <div class="jumbotron col-md-4 float-left bg-light">
+                <h2>Visualizations</h2>
+                <hr>
+                <img src="Resources/images/Fig1.png" class=" img-fluid rounded float-left" alt="TempvsLatitude" style="width:50%;">
+                <img src="Resources/images/Fig2.png" class="img-fluid rounded float-right" alt="WindvsLatitude" style="width:50%;">
+                <img src="Resources/images/Fig3.png" class="img-fluid rounded float-left" alt="CloudinessvsLatitude" style="width:50%;">
+                <img src="Resources/images/Fig4.png" class="img-fluid rounded float-right" alt="HumidityvsLatitude" style="width:50%;">
+            </div>
+
+        </div>
+
+
+    
+    </body>
+</html>
