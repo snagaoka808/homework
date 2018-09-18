@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cloudiness</title>
+
+        <link rel="stylesheet" href="Weather.css">
+        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    </head>
+
+    <body style="background-color:#DCDCDC;">  
+       <div>
+        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+                       
+            <a class="navbar-brand" href="snagaoka808.github.io"><h3 id="lat">Latitude</h3></a>
+                      
+         <ul class="navbar-nav">
+                    
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Plots</a>
+                    <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Temperature.html" target="_blank">Temperature</a></li>
+                            <li><a class="dropdown-item" href="Wind.html" target="_blank">Wind Speed</a></li>
+                            <li><a class="dropdown-item" href="Cloudiness.html" target="_blank">Cloudiness</a></li>
+                            <li><a class="dropdown-item" href="Humidity.html"target="_blank">Humidity</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Data.html">Data</a>
+                </li>
+            </ul>
+         </nav>
+        </div>
+        <br>
+        <div class="container">
+            <div i class="jumbotron col-md-8 float-left bg-light">
+                
+                <h2>Cloudiness % Versus Latitude</h2>
+                <hr>
+                <img src="Resources/images/Fig3.png" class="rounded float-up" class="center" alt="Cloudiness % vs Latitude" style="width:70%;">
+                <p>
+                According to our scatter-plot charting of the latitudes of 500 cities selected at random against those citie's cloudiness percentages, we can  
+                see that the cloudiness levels (at the time the API was called) are roughly symmetrical around zero degrees latitude (the equator). with our
+                random selection of cities, we seem to have selected cities with more cloudiness in the northern hemisphere than in the southern 
+                hemisphere and most cloudiness levels were roughly symmetric between 0% and close to 100% at the time of this API call. A more interesting analysis 
+                would be to show how the average yearly cloudiness percentages change with respect to latitude. 
+                </p>
+                <br>
+    
+            </div>
+                
+            <div class="jumbotron col-md-4 float-left bg-light">
+                <h2>Visualizations</h2>
+                <hr>
+                <img src="Resources/images/Fig1.png" class=" img-fluid rounded float-left" alt="TempvsLatitude" style="width:50%;">
+                <img src="Resources/images/Fig2.png" class="img-fluid rounded float-right" alt="WindvsLatitude" style="width:50%;">
+                <img src="Resources/images/Fig3.png" class="img-fluid rounded float-left" alt="CloudinessvsLatitude" style="width:50%;">
+                <img src="Resources/images/Fig4.png" class="img-fluid rounded float-right" alt="HumidityvsLatitude" style="width:50%;">
+            </div>
+    
+        </div>
+        
+        
+    </body>
+
+
+    
+   
+</html>

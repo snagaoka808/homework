@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Comparison: Latitude Vs Weather</title>
+
+        <link rel="stylesheet" type="text/css" href="Weather.css">
+        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    </head>
+
+    <body style="background-color:#DCDCDC;">  
+       <div>
+        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+                       
+            <a class="navbar-brand" href="snagaoka808.github.io"><h3 id="lat">Latitude</h3></a>
+                      
+         <ul class="navbar-nav">
+                    
+                <li class="nav-item dropdown" >
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Plots</a>
+                    <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Temperature.html" target="_blank">Temperature</a></li>
+                            <li><a class="dropdown-item" href="Wind.html" target="_blank">Wind Speed</a></li>
+                            <li><a class="dropdown-item" href="Cloudiness.html" target="_blank">Cloudiness</a></li>
+                            <li><a class="dropdown-item" href="Humidity.html"target="_blank">Humidity</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Data.html">Data</a>
+                </li>
+            </ul>
+         </nav>
+        </div>
+        <br>
+        <div class="container">
+
+            <div class="jumbotron col-md-12 float-left bg-light">
+                <h2 style="font-weight: bold;color: turquoise;">Comparison: Latitude Vs. X</h2>
+                <hr>
+                <p> Click on any plot to get an in-depth analysis</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Vs. Temperature </h3>
+                        <a href='Temperature.html'target="_blank">
+                        <img src="Resources/images/Fig1.png" class=" img-fluid rounded float-left" alt="TempvsLatitude" style="width:100%;">
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                            <h3>Vs. Wind Speed </h3>
+                            <a href='Wind.html'target="_blank">
+                        <img src="Resources/images/Fig2.png" class="img-fluid rounded float-right" alt="WindvsLatitude" style="width:100%;">
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Vs. Cloudiness % </h3>
+                        <a href='Cloudiness.html'target="_blank">
+                        <img src="Resources/images/Fig3.png" class=" img-fluid rounded float-left" alt="CloudinessvsLatitude" style="width:100%;">
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Vs. Humidity % </h3>
+                        <a href='Humidity.html'target="_blank">
+                        <img src="Resources/images/Fig4.png" class="img-fluid rounded float-right" alt="HumidityvsLatitude" style="width:100%;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+
+
+    
+    </body>
+</html>
